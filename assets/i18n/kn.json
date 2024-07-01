@@ -1,0 +1,27 @@
+{
+    "LOGIN": "ಲಾಗಿನ್",
+    "REGISTER": "ನೋಂದಣಿ",
+    "EMAIL": "ಇಮೇಲ್",
+    "PASSWORD": "ಗುಪ್ತಪದ",
+    "SELECT_LANGUAGE": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "EMAIL_REQUIRED": "ಇಮೇಲ್ ಅಗತ್ಯವಿದೆ.",
+    "INVALID_EMAIL": "ಅಮಾನ್ಯ ಇಮೇಲ್ ವಿಳಾಸ.",
+    "PASSWORD_REQUIRED": "ಗುಪ್ತಪದ ಅಗತ್ಯವಿದೆ.",
+    "PASSWORD_MIN_LENGTH": "ಗುಪ್ತಪದ ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳಷ್ಟು ಉದ್ದವಾಗಿರಬೇಕು.",
+    "Kannada": "ಕನ್ನಡ",
+    "German": "ಜರ್ಮನ್",
+    "English": "ಇಂಗ್ಲೀಷ್",
+    "Marathi": "ಮರಾಠಿ",
+    "HOME": "ಹೋಮ್",
+  "ABOUT": "ನಮ್ಮ ಬಗ್ಗೆ",
+  "CONTACT": "ಸಂಪರ್ಕ",
+  "LOGOUT": "ಲಾಗೌಟ್",
+  "Logged in as": "ಲಾಗಿನ್ ಆಗಿದ್ದೇವೆ",
+  "ENTER_NAME": "ಹೆಸರು ನಮೂದಿಸಿ",
+  "ENTER_EMAIL": "ಇಮೇಲ್ ನಮೂದಿಸಿ",
+  "SUBMIT": "ಸಲ್ಲಿಸು",
+  "UPDATE": "ನವೀಕರಿಸಿ",
+  "Name": "ಹೆಸರು"
+
+  }
+  

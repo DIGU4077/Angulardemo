@@ -1,0 +1,28 @@
+{
+  "LOGIN": "लॉगिन करा",
+  "REGISTER": "नोंदणी करा",
+  "EMAIL": "ईमेल",
+  "PASSWORD": "पासवर्ड",
+  "SELECT_LANGUAGE": "भाषा निवडा",
+  "EMAIL_REQUIRED": "ईमेल आवश्यक आहे.",
+  "INVALID_EMAIL": "अवैध ईमेल पत्ता.",
+  "PASSWORD_REQUIRED": "पासवर्ड आवश्यक आहे.",
+  "PASSWORD_MIN_LENGTH": "पासवर्ड किमान 6 अक्षरे असावा.",
+    "Kannada": "कन्नड",
+    "German": "जर्मन",
+    "English": "इंग्रजी",
+    "Marathi": "मराठी",
+    "HOME": "होम",
+  "ABOUT": "आमच्याबद्दल",
+  "CONTACT": "संपर्क",
+  "LOGOUT": "लॉगआउट",
+  "Logged in as": "येथे लॉग इन आहे",
+   "ENTER_NAME": "नाव टाका",
+  "ENTER_EMAIL": "ईमेल टाका",
+  "SUBMIT": "सबमिट",
+  "UPDATE": "अपडेट करा", 
+   "Name": "नाव"
+
+  
+  
+}

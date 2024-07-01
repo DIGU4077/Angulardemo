@@ -1,0 +1,20 @@
+{
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "SELECT_LANGUAGE": "Select Language",
+    "EMAIL_REQUIRED": "Email is required.",
+    "INVALID_EMAIL": "Invalid email address.",
+    "PASSWORD_REQUIRED": "Password is required.",
+    "PASSWORD_MIN_LENGTH": "Password must be at least 6 characters long.","HOME": "Home",
+  "ABOUT": "About",
+  "CONTACT": "Contact",
+  "LOGOUT": "Logout",
+  "Logged in as": "Logged in as",
+  "ENTER_NAME": "Enter name",
+  "ENTER_EMAIL": "Enter email",
+  "SUBMIT": "Submit",
+  "UPDATE": "Update",
+  "Name": "Name"
+  }
