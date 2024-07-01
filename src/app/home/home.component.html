@@ -1,0 +1,47 @@
+
+
+<div *ngIf="!isFormSubmitted">
+ <div class="row mt-5">
+    <div class="card">
+      <div class="card-body"><form >
+        <div class="form-group  mt-3">
+          <input type="text" class="form-control" id="name" [(ngModel)]="formData.name" name="name" ngModel placeholder="{{'ENTER_NAME' | translate}}" required>
+        </div>
+        <div class="form-group mt-2 ">
+          <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email" ngModel placeholder="{{'ENTER_EMAIL'|translate}}" required>
+        </div>
+        <div class="row mt-3">
+          <button type="submit" class="btn btn-primary mt-3 margin-left col-3" (click)="onSubmit()">{{ 'SUBMIT' | translate }}</button>&nbsp;
+          <button type="submit" class="btn btn-success mt-3 margin-left col-3" (click)="onReset()" >{{ 'UPDATE' | translate }}</button>
+        </div>
+      </form></div>
+    </div>
+ </div>
+</div>
+
+
+<div class="container mt-5">
+    <div *ngIf="isFormSubmitted">
+      <table class="table mt-5">
+        <thead>
+          <tr>
+            <th scope="col">{{'Name'|translate}}</th>
+            <th scope="col">{{'EMAIL'|translate}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let entry of formDataList">
+            <td>{{ entry.name }}</td>
+            <td>{{ entry.email }}</td>
+            <td><button class="btn btn-danger btn-sm" (click)="onDelete(entry)">Delete</button>
+            </td>
+            <td><button class="btn btn-danger btn-sm" (click)="onEdit(entry)">edit</button>
+            </td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

@@ -1,0 +1,128 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container text-center">
+    <a class="navbar-brand login" (click)="login()">{{ 'LOGIN' | translate }}</a>
+    <a class="navbar-brand register" (click)="register()">{{ 'REGISTER' | translate }}</a>
+
+    <select class="custom-select dropdown" id="languageSelect" (change)="switchLanguage($any($event.target).value)">
+      <option disabled selected>{{ 'SELECT_LANGUAGE' | translate }}</option>
+      <option value="en">{{'English' | translate}}</option>
+      <option value="mar">{{'Marathi' |translate}}</option>
+      <option value="kn">{{'Kannada'|translate}}</option>
+      <option value="de">{{'German'| translate}}</option>
+    </select>
+  </div>
+</nav>
+
+<div class="container mt-5" *ngIf="isloggedin">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <img src="assets/images/loginimg2.avif" alt="Logo">
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center">{{ 'LOGIN' | translate }}</h4>
+          <form #loginForm="ngForm">
+            <div class="form-group">
+              <label for="email">{{ 'EMAIL' | translate }}</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                ngModel
+                required
+                email
+                #emailInput="ngModel"
+                placeholder="{{ 'EMAIL' | translate }}">
+              <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger">
+                <small *ngIf="emailInput.errors?.['required']">{{ 'EMAIL_REQUIRED' | translate }}</small>
+                <small *ngIf="emailInput.errors?.['email']">{{ 'INVALID_EMAIL' | translate }}</small>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">{{ 'PASSWORD' | translate }}</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                ngModel
+                required
+                minlength="6"
+                #passwordInput="ngModel"
+                placeholder="{{ 'PASSWORD' | translate }}">
+              <div *ngIf="passwordInput.invalid && passwordInput.touched" class="text-danger">
+                <small *ngIf="passwordInput.errors?.['required']">{{ 'PASSWORD_REQUIRED' | translate }}</small>
+                <small *ngIf="passwordInput.errors?.['minlength']">{{ 'PASSWORD_MIN_LENGTH' | translate }}</small>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" (click)="onSubmit(loginForm)">{{ 'LOGIN' | translate }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5" *ngIf="!isloggedin">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center">{{ 'REGISTER' | translate }}</h4>
+          <form #registerForm="ngForm">
+            <div class="form-group">
+              <label for="email">{{ 'EMAIL' | translate }}</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                ngModel
+                required
+                email
+                #emailInput="ngModel"
+                placeholder="{{ 'EMAIL' | translate }}">
+              <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger">
+                <small *ngIf="emailInput.errors?.['required']">{{ 'EMAIL_REQUIRED' | translate }}</small>
+                <small *ngIf="emailInput.errors?.['email']">{{ 'INVALID_EMAIL' | translate }}</small>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">{{ 'PASSWORD' | translate }}</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                name="phone"
+                ngModel
+                placeholder="{{ 'PHONE' | translate }}">
+            </div>
+
+            <div class="form-group">
+              <label for="password">{{ 'PASSWORD' | translate }}</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                ngModel
+                required
+                minlength="6"
+                #passwordInput="ngModel"
+                placeholder="{{ 'PASSWORD' | translate }}">
+              <div *ngIf="passwordInput.invalid && passwordInput.touched" class="text-danger">
+                <small *ngIf="passwordInput.errors?.['required']">{{ 'PASSWORD_REQUIRED' | translate }}</small>
+                <small *ngIf="passwordInput.errors?.['minlength']">{{ 'PASSWORD_MIN_LENGTH' | translate }}</small>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" (click)="onRegister(registerForm)">{{ 'REGISTER' | translate }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

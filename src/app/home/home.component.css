@@ -1,0 +1,18 @@
+.card
+{
+    margin-left: 550px;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+.form-control {
+    margin-top: 30px;
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border color and thickness */
+    border-radius: 30px; /* Rounded corners for input fields */
+    opacity: 40px;
+  }

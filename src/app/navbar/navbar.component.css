@@ -1,0 +1,22 @@
+.navbar-item
+{
+  text-align: center;
+  font-weight: 100px;
+  color: white;
+}
+.navbar
+{     
+    background-color: navy;
+    margin-top: 30px;
+    position: sticky;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; /* Set text color to white */
+  margin-right: 60px;
+  font-size: 20px;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Align items to the right */
+}
